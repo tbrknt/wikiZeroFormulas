@@ -1,14 +1,17 @@
 {
 	"name": "WikiZero Formulas",
 	"description" : "This extension enables your browser to display mathematical formulas on Wiki Zero pages",
-    "version": "1.0",
+    "version": "1.0.1",
     "manifest_version": 2,
 	"content_scripts": [
 		{
-		  "matches": ["http://www.wiki-zero.com/*"],
+		  "matches": ["*://*.wiki-zero.com/*"],
 		  "js": ["wikiZeroFormula.js"],
 		  "run_at": "document_end"
 		}
+	],
+	"permissions": [
+		"https://wikimedia.org/*"
 	],
 	"icons": {
       "16": "images/logo16.png",
