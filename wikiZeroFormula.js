@@ -34,8 +34,3 @@ var mathElems = document.getElementsByClassName("mwe-math-fallback-image-inline"
 for(var i=0; i<mathElems.length; i++){
 	httpGet(mathElems[i].src, mathElems[i]);
 }
-
-
-var i=0;
-httpGet(mathElems[i].src, mathElems[i]);
-
